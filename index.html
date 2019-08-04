@@ -141,6 +141,113 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-08-04T07:13:33.047Z">2019-08-04</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1088 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/chance/2019/08/04/hello-world/">Quick Start</a>
+            
+        </h1>
+        <div class="content">
+            <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p>このサイトはgithubが提供している無料サービスを活用して公開しています。<br>個人事業のスタートアップでは、github上のサイトだけで済ませている例もまま有りますので、このサンプルページをそのまま使用することも出来なくもありません。</p>
+<p>最終的には独自ドメインを用意して固有のサイトを持たれる方がよろしいかと存じます。<br>その際の切り分け方には二通りが御座います。</p>
+<h2 id="業者に管理させる場合"><a href="#業者に管理させる場合" class="headerlink" title="業者に管理させる場合"></a>業者に管理させる場合</h2><ul>
+<li>CHANCE側<ul>
+<li>原稿、画像などの素材作成と提供</li>
+<li>レイアウトの大まかな指示</li>
+</ul>
+</li>
+<li>業者側<ul>
+<li>ドメインの取得管理</li>
+<li>paasの選定、不具合対応</li>
+<li>原稿の形式変換</li>
+<li>ページレイアウト</li>
+<li>デプロイ</li>
+</ul>
+</li>
+</ul>
+<h2 id="ご自身で編集管理される場合"><a href="#ご自身で編集管理される場合" class="headerlink" title="ご自身で編集管理される場合"></a>ご自身で編集管理される場合</h2><ul>
+<li>初度業務 <ul>
+<li>ドメインの取得管理 （一度決めてしまえば、あとは年使用額の引き落しだけです。）</li>
+<li>静的サイト用paasの選定（一度決めてしまえば、あとは月使用額の引き落しだけです。静的サイト運用ですので滅多に障害は起きません。）</li>
+</ul>
+</li>
+<li>都度業務<ul>
+<li>デプロイ （githubからpaasへのデプロイを管理者側が行う）</li>
+</ul>
+</li>
+<li>作成担当<ul>
+<li>マークダウン形式での作成を義務づければ、原稿作成者が概ねのレイアウトを決め、形式変換作業は省略出来ます。</li>
+</ul>
+</li>
+</ul>
+<p>以下、概要を御説明いたします。</p>
+<hr>
+<h3 id="環境構築"><a href="#環境構築" class="headerlink" title="環境構築"></a>環境構築</h3><ul>
+<li>お使いのPCにnodejsをインストールしておきます。</li>
+<li>任意のフォルダにhexo（静的サイトジェネレーター）をインストールします。</li>
+<li>上記のフォルダにgithubのCHANCEのリポジトリをクローンします。</li>
+</ul>
+<p>それぞれweb上に詳しい手順と解説がいろいろとあります。用語に慣れないだけで、実際の学習コストは低いです。</p>
+<h3 id="githubを活用した共同編集"><a href="#githubを活用した共同編集" class="headerlink" title="githubを活用した共同編集"></a>githubを活用した共同編集</h3><p>メンバーがhexoとgithubの使い方を覚えると、各自が個別に原稿を作成して投稿したり、共同編集できたりと、管理運営の手間が軽減されます。</p>
+<p>最終的にpaasに独自ドメインを持って正式なサイトを発足させる場合でも、gituhub側を原稿編集とプレビューの場として活用する事が可能です。</p>
+<ul>
+<li>原稿作成者： hexoで原案を作成してgithubへデプロイ</li>
+<li>管理者や他のメンバー： githubのページを見て査読、監修、校正</li>
+<li>管理者： 完成稿をpaasにデプロイ（一般公開）</li>
+</ul>
+<h2 id="hexoの使い方"><a href="#hexoの使い方" class="headerlink" title="hexoの使い方"></a>hexoの使い方</h2><p><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! </p>
+<p><a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. </p>
+<p><a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> </p>
+<p><a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h3 id="新規投稿"><a href="#新規投稿" class="headerlink" title="新規投稿"></a>新規投稿</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="hljs-string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>hexo new &lt;投稿タイトル&gt; で<code>/source/_posts</code>以下に原稿ファイルの雛形が作成されます。そのファイルをテキストエディタで開いて原稿を書き込んで行きます。原稿ファイルの形式はマークダウン形式です。</p>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="ローカルサーバーの起動"><a href="#ローカルサーバーの起動" class="headerlink" title="ローカルサーバーの起動"></a>ローカルサーバーの起動</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>御自身のPC上で更新や変更をプレビュー出来ます。ブラウザの<code>http://localhost:4000</code>でプレビューが出来ます。サーバー停止は<code>Ctrl+C</code>です。</p>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="ビルド"><a href="#ビルド" class="headerlink" title="ビルド"></a>ビルド</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>原稿や画像を公開用の形式に変換したものを作成します。</p>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="githubへのデプロイ"><a href="#githubへのデプロイ" class="headerlink" title="githubへのデプロイ"></a>githubへのデプロイ</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>サイトにアップロードします。</p>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-07-31T11:46:21.000Z">2019-07-31</time>
                 
                 
@@ -267,59 +374,6 @@
 <h3 id="Indonesian"><a href="#Indonesian" class="headerlink" title="Indonesian"></a>Indonesian</h3><p>Selamat Siang<br>Ini adalah Bantuan Kesehatan Lintas Budaya yang berbentuk Non Profit Organisation (NPO).<br> Kami menyediakan bantuan bagi anda orang asing yang mengalami sakit dan berdomisili diJepang. Kami terdiri dari perawat yang berkewarganegaraan Indonesia, Filipin,dan Vietnam, dan juga perawat Jepang yang memiliki pengalaman bekerja diluar negeri.<br> Apabila anda mengalami kesulitan seperti kerumah sakit mana harus pergi pada saat sakit, membutuhkan penerjemah, pelayanan dokter/perawat wanita dll, silahkan menghubungi kami.(apabila harus kunjungan kerumah sakit dibutuhkan biaya 15000Yen/kunjungan).</p>
 <h3 id="Filipino"><a href="#Filipino" class="headerlink" title="Filipino"></a>Filipino</h3><p>Mabuhay.  Maligayang pagdating sa Japan.<br>Ito ay NPO Cross Cultural Support Center(CHANCE).<br>Nandito kami upang matulungan ang mga dayuhan na nagkasakit o may sakit sa panahon ng pagbisita nila sa bansang Hapon.<br>May mga Indonesian, Filipino, Vietnamese na Nars at Hapon na Nars  na may karanasan sa ibang bansa.<br>Kapag hindi mo alam kung anong ospital ang pupuntahan, kapag hindi mo nauunawaan ang wika, mangyaring makipag-ugnay sa amin kapag may problema ka, tulad ng kung gusto mong makita ka ng babaeng doktor.<br>(Kung kayo ay sasamahan sa ospital, ang halaga ng propesyonal na bayad ay maaring umabot 15000 yen kasama na ang mga gastos sa transportasyon).Makipagugnay lamang sa amin para sa detalye. Huwag  mag atubili at nandito kami para tumulonMabuhay.  Maligayang pagdating sa Japan.<br>Ito ay NPO Cross Cultural Support Center(CHANCE).<br>Nandito kami upang matulungan ang mga dayuhan na nagkasakit o may sakit sa panahon ng pagbisita nila sa bansang Hapon.<br>May mga Indonesian, Filipino, Vietnamese na Nars at Hapon na Nars  na may karanasan sa ibang bansa.<br>Kapag hindi mo alam kung anong ospital ang pupuntahan, kapag hindi mo nauunawaan ang wika, mangyaring makipag-ugnay sa amin kapag may problema ka, tulad ng kung gusto mong makita ka ng babaeng doktor.<br>(Kung kayo ay sasamahan sa ospital, ang halaga ng propesyonal na bayad ay maaring umabot 15000 yen kasama na ang mga gastos sa transportasyon).Makipagugnay lamang sa amin para sa detalye. Huwag  mag atubili at nandito kami para tumulon</p>
 <h3 id="Vietnamese"><a href="#Vietnamese" class="headerlink" title="Vietnamese"></a>Vietnamese</h3><p>Xin chào các bạn. Xin giới thiệu với các bạn đây là trung tâm hỗ trợ y tế đa văn hoá NPO với mục đích trợ giúp người nước ngoài cần giúp đỡ khi bị bệnh tại Nhật.<br>Trung tâm gồm có điều dưỡng người Indonesia , người Phi-líp-pin , người Việt Nam, ngoài ra còn có điều dưỡng người Nhật có kinh nghiệm công tác ở nước ngoài.<br>Trường hợp bạn bị bệnh mà chưa biết phải đi khám ở đâu, có khó khăn về ngôn ngữ, hay có những yêu cầu đặc biệt như muốn khám bác sỹ nữ , , , ,hãy liên lạc với trung tâm.( Phí cho trường  hợp cần thiết cùng đi khám 15000yen/ lần bao gồm cả phí giao thông).</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-31T11:25:54.866Z">2019-07-31</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a minute read (About 121 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/chance/2019/07/31/hello-world/">Hello World</a>
-            
-        </h1>
-        <div class="content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="hljs-string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
         </div>
         
@@ -515,6 +569,25 @@
         
         <article class="media">
             
+            <a href="/chance/2019/08/04/hello-world/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/chance/images/thumbnail.svg" alt="Quick Start">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-04T07:13:33.047Z">2019-08-04</time></div>
+                    <a href="/chance/2019/08/04/hello-world/" class="has-link-black-ter is-size-6">Quick Start</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/chance/2019/07/31/test3/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/chance/images/thumbnail.svg" alt="test3">
@@ -570,25 +643,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/chance/2019/07/31/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/chance/images/thumbnail.svg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-31T11:25:54.866Z">2019-07-31</time></div>
-                    <a href="/chance/2019/07/31/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -602,12 +656,23 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/chance/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/chance/archives/2019/07/">
                 <span class="level-start">
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">4</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -650,6 +715,25 @@
         
         <article class="media">
             
+            <a href="/chance/2019/08/04/hello-world/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/chance/images/thumbnail.svg" alt="Quick Start">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-04T07:13:33.047Z">2019-08-04</time></div>
+                    <a href="/chance/2019/08/04/hello-world/" class="has-link-black-ter is-size-6">Quick Start</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/chance/2019/07/31/test3/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/chance/images/thumbnail.svg" alt="test3">
@@ -705,25 +789,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/chance/2019/07/31/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/chance/images/thumbnail.svg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-31T11:25:54.866Z">2019-07-31</time></div>
-                    <a href="/chance/2019/07/31/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -737,12 +802,23 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/chance/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/chance/archives/2019/07/">
                 <span class="level-start">
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">4</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
